@@ -1,0 +1,1260 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Admin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CatégorieMatériau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentreRecyclage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citoyen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commentaire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Déchet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utilisateur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ÉliminationDéchet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ÉvénementCollecte"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aCentreRecyclage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aCommentéArticle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aDéchet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aGéréPar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aMatériauAccepté"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aOrganiséCampagne"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aParticipation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aProfil"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPubliéArticle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aTraitementDéchet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aÉcritPar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aÉquipement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aÉquipementMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aÉvénement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aÉvénementOrganiséPar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#faitDemandeElimination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participeà"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#article_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#articlecreated_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#categorie_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#centreRecyclage_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#comment_created_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commentaire_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contact_info"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contentComment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#created_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#details"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disposal_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#elimination_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#equipment_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#event_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#event_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#event_location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#event_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#image"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locationCenter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maintenance_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maintenance_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#method"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameCategory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameEquipment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#participation_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#purchase_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statusDisposal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#typeEquipment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_adress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_password"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user_phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#waste_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Individu9"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CatégorieMatériau"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#aCentreRecyclage"/>
+            <Class IRI="#CentreRecyclage"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CentreRecyclage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#aGéréPar"/>
+            <Class IRI="#Admin"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Commentaire"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#aCommentéArticle"/>
+            <Class IRI="#Article"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Participation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#aÉvénement"/>
+            <Class IRI="#ÉvénementCollecte"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Utilisateur"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#aPubliéArticle"/>
+            <Class IRI="#Article"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ÉliminationDéchet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#aDéchet"/>
+            <Class IRI="#Déchet"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ÉquipementRecyclage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#aMaintenance"/>
+            <Class IRI="#Maintenance"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#aProfil"/>
+            <Class IRI="#Profil"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Admin"/>
+        <Class IRI="#Utilisateur"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citoyen"/>
+        <Class IRI="#Utilisateur"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Admin"/>
+        <Class IRI="#Citoyen"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ÉvénementCollecte"/>
+        <NamedIndividual IRI="#Individu10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Participation"/>
+        <NamedIndividual IRI="#Individu11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Utilisateur"/>
+        <NamedIndividual IRI="#Individu12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Article"/>
+        <NamedIndividual IRI="#Individu2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CatégorieMatériau"/>
+        <NamedIndividual IRI="#Individu3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CentreRecyclage"/>
+        <NamedIndividual IRI="#Individu4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Commentaire"/>
+        <NamedIndividual IRI="#Individu5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Déchet"/>
+        <NamedIndividual IRI="#Individu6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ÉliminationDéchet"/>
+        <NamedIndividual IRI="#Individu7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Maintenance"/>
+        <NamedIndividual IRI="#Individu8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ÉquipementRecyclage"/>
+        <NamedIndividual IRI="#Individu9"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aCommentéArticle"/>
+        <NamedIndividual IRI="#Individu12"/>
+        <NamedIndividual IRI="#Individu2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aDéchet"/>
+        <NamedIndividual IRI="#Individu12"/>
+        <NamedIndividual IRI="#Individu6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aCentreRecyclage"/>
+        <NamedIndividual IRI="#Individu3"/>
+        <NamedIndividual IRI="#Individu4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aMaintenance"/>
+        <NamedIndividual IRI="#Individu9"/>
+        <NamedIndividual IRI="#Individu8"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#event_date"/>
+        <NamedIndividual IRI="#Individu10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">21/09/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#event_id"/>
+        <NamedIndividual IRI="#Individu10"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#event_location"/>
+        <NamedIndividual IRI="#Individu10"/>
+        <Literal>parc soukra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#event_name"/>
+        <NamedIndividual IRI="#Individu10"/>
+        <Literal>Collecte de plastique 2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#event_id"/>
+        <NamedIndividual IRI="#Individu11"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#participation_id"/>
+        <NamedIndividual IRI="#Individu11"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#user_id"/>
+        <NamedIndividual IRI="#Individu11"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#user_email"/>
+        <NamedIndividual IRI="#Individu12"/>
+        <Literal>amina.mami@esprit.tn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#user_id"/>
+        <NamedIndividual IRI="#Individu12"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#user_name"/>
+        <NamedIndividual IRI="#Individu12"/>
+        <Literal>amina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#user_password"/>
+        <NamedIndividual IRI="#Individu12"/>
+        <Literal>amina123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#article_id"/>
+        <NamedIndividual IRI="#Individu2"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#articlecreated_at"/>
+        <NamedIndividual IRI="#Individu2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">&quot;2024-09-15&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#content"/>
+        <NamedIndividual IRI="#Individu2"/>
+        <Literal>Contenu de l&apos;article sur le recyclage.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#Individu2"/>
+        <Literal>image1.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Individu2"/>
+        <Literal>Article sur le recyclage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#categorie_id"/>
+        <NamedIndividual IRI="#Individu3"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameCategory"/>
+        <NamedIndividual IRI="#Individu3"/>
+        <Literal>Plastique</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#categorie_id"/>
+        <NamedIndividual IRI="#Individu4"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#centreRecyclage_id"/>
+        <NamedIndividual IRI="#Individu4"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#contact_info"/>
+        <NamedIndividual IRI="#Individu4"/>
+        <Literal>71458236</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationCenter"/>
+        <NamedIndividual IRI="#Individu4"/>
+        <Literal>Tunis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#article_id"/>
+        <NamedIndividual IRI="#Individu5"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#comment_created_at"/>
+        <NamedIndividual IRI="#Individu5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">&quot;20/09/2024&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#commentaire_id"/>
+        <NamedIndividual IRI="#Individu5"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#contentComment"/>
+        <NamedIndividual IRI="#Individu5"/>
+        <Literal>l&apos;article sur le recyclage est intéréssant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#user_id"/>
+        <NamedIndividual IRI="#Individu5"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#created_at"/>
+        <NamedIndividual IRI="#Individu6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">&quot;20-09-2024&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status"/>
+        <NamedIndividual IRI="#Individu6"/>
+        <Literal>&quot;-&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#Individu6"/>
+        <Literal>&quot;verre&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#waste_id"/>
+        <NamedIndividual IRI="#Individu6"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weight"/>
+        <NamedIndividual IRI="#Individu6"/>
+        <Literal>&quot;80&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#disposal_date"/>
+        <NamedIndividual IRI="#Individu7"/>
+        <Literal>&quot;22/09/2024&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#elimination_id"/>
+        <NamedIndividual IRI="#Individu7"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Individu7"/>
+        <Literal>&quot;Ariana&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#method"/>
+        <NamedIndividual IRI="#Individu7"/>
+        <Literal>&quot;recyclage&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#statusDisposal"/>
+        <NamedIndividual IRI="#Individu7"/>
+        <Literal>&quot;traitée&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#waste_id"/>
+        <NamedIndividual IRI="#Individu7"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Individu8"/>
+        <Literal>maintenance</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipment_id"/>
+        <NamedIndividual IRI="#Individu8"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maintenance_date"/>
+        <NamedIndividual IRI="#Individu8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">&quot;01/11/2024&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maintenance_id"/>
+        <NamedIndividual IRI="#Individu8"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#equipment_id"/>
+        <NamedIndividual IRI="#Individu9"/>
+        <Literal>&quot;1&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameEquipment"/>
+        <NamedIndividual IRI="#Individu9"/>
+        <Literal>ÉquipementRecyclage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#purchase_date"/>
+        <NamedIndividual IRI="#Individu9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">01/01/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#typeEquipment"/>
+        <NamedIndividual IRI="#Individu9"/>
+        <Literal>Broyage</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#aProfil"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#faitDemandeElimination"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aCentreRecyclage"/>
+        <Class IRI="#CatégorieMatériau"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aCommentéArticle"/>
+        <Class IRI="#Commentaire"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aDéchet"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aGéréPar"/>
+        <Class IRI="#CentreRecyclage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aMaintenance"/>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aMatériauAccepté"/>
+        <Class IRI="#CentreRecyclage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aOrganiséCampagne"/>
+        <Class IRI="#Utilisateur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aParticipation"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aProfil"/>
+        <Class IRI="#Utilisateur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aPubliéArticle"/>
+        <Class IRI="#Utilisateur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aTraitementDéchet"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aÉcritPar"/>
+        <Class IRI="#Commentaire"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aÉquipement"/>
+        <Class IRI="#CentreRecyclage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aÉquipementMaintenance"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aÉvénement"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aÉvénementOrganiséPar"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#faitDemandeElimination"/>
+        <Class IRI="#Utilisateur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participeà"/>
+        <Class IRI="#Utilisateur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aCentreRecyclage"/>
+        <Class IRI="#CentreRecyclage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aCommentéArticle"/>
+        <Class IRI="#Article"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aDéchet"/>
+        <Class IRI="#Déchet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aGéréPar"/>
+        <Class IRI="#Admin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aMaintenance"/>
+        <Class IRI="#Maintenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aMatériauAccepté"/>
+        <Class IRI="#CatégorieMatériau"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aParticipation"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aProfil"/>
+        <Class IRI="#Profil"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aPubliéArticle"/>
+        <Class IRI="#Article"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aTraitementDéchet"/>
+        <Class IRI="#Déchet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aÉcritPar"/>
+        <Class IRI="#Utilisateur"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aÉquipement"/>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aÉquipementMaintenance"/>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aÉvénement"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aÉvénementOrganiséPar"/>
+        <Class IRI="#Admin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#faitDemandeElimination"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participeà"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#article_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#articlecreated_at"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#comment_created_at"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#commentaire_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#contact_info"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#content"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#contentComment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#created_at"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#details"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disposal_date"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#equipment_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#event_date"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#event_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#event_location"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#event_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#image"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#location"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#locationCenter"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#maintenance_date"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#maintenance_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#method"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#nameCategory"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#nameEquipment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#participation_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#purchase_date"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#status"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#statusDisposal"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#title"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#type"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#typeEquipment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_adress"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_age"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_email"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_gender"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_password"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#user_phone"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#waste_id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#weight"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#article_id"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#articlecreated_at"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#categorie_id"/>
+        <Class IRI="#CatégorieMatériau"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#centreRecyclage_id"/>
+        <Class IRI="#CentreRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#comment_created_at"/>
+        <Class IRI="#Commentaire"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#commentaire_id"/>
+        <Class IRI="#Commentaire"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#contact_info"/>
+        <Class IRI="#CentreRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#content"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#contentComment"/>
+        <Class IRI="#Commentaire"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#created_at"/>
+        <Class IRI="#Commentaire"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#details"/>
+        <Class IRI="#Maintenance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disposal_date"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#elimination_id"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#equipment_id"/>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#event_date"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#event_id"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#event_location"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#event_name"/>
+        <Class IRI="#ÉvénementCollecte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#location"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#locationCenter"/>
+        <Class IRI="#CentreRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maintenance_date"/>
+        <Class IRI="#Maintenance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maintenance_id"/>
+        <Class IRI="#Maintenance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#method"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#CentreRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameCategory"/>
+        <Class IRI="#CatégorieMatériau"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameEquipment"/>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#participation_id"/>
+        <Class IRI="#Participation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#purchase_date"/>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#Déchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#statusDisposal"/>
+        <Class IRI="#ÉliminationDéchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#Déchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#typeEquipment"/>
+        <Class IRI="#ÉquipementRecyclage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_adress"/>
+        <Class IRI="#Profil"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_age"/>
+        <Class IRI="#Profil"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_email"/>
+        <Class IRI="#Utilisateur"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_gender"/>
+        <Class IRI="#Profil"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_id"/>
+        <Class IRI="#Utilisateur"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_name"/>
+        <Class IRI="#Utilisateur"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_password"/>
+        <Class IRI="#Utilisateur"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user_phone"/>
+        <Class IRI="#Profil"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#waste_id"/>
+        <Class IRI="#Déchet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#Déchet"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#article_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#articlecreated_at"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#categorie_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#comment_created_at"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#commentaire_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#contact_info"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#content"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#contentComment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#created_at"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#details"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disposal_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#elimination_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#equipment_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#event_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#event_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#event_location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#event_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#image"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#locationCenter"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maintenance_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maintenance_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#method"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameCategory"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameEquipment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#participation_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#purchase_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#statusDisposal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#typeEquipment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_adress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_password"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user_phone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#waste_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

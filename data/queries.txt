@@ -1,0 +1,21 @@
+# Requête pour sélectionner tous les individus d'une classe Admin
+PREFIX : <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#>
+SELECT ?individu
+WHERE {
+  ?individu a :Admin .
+}
+
+# Requête pour obtenir tous les articles publiés par un admin
+SELECT ?article
+WHERE {
+  ?admin a :Admin .
+  ?admin :aPubliéArticle ?article .
+}
+
+# Requête pour filtrer par un attribut spécifique
+SELECT ?utilisateur
+WHERE {
+  ?utilisateur a :Utilisateur .
+  ?utilisateur :user_age ?age .
+  FILTER(?age > 18)
+}

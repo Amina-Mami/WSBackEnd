@@ -1,0 +1,5 @@
+PREFIX ontologie-dechet: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#>
+SELECT ?waste
+WHERE {
+  ?waste a ontologie-dechet:Waste .
+}
