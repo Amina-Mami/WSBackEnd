@@ -32,18 +32,17 @@ public class WasteController {
 
     @PostMapping(value = "/wastes", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> addWaste(@RequestBody Map<String, Object> newWaste) {
-        String wasteId = (String) newWaste.get("waste_id");
+
         String type = (String) newWaste.get("type");
         double weight = Double.parseDouble(newWaste.get("weight").toString());
         String status = (String) newWaste.get("status");
         String createdAt = (String) newWaste.get("createdAt");
 
 
-        wasteService.addWaste(wasteId, type, weight, status, createdAt);
+        wasteService.addWaste(type, weight, status, createdAt);
 
 
         Map<String, Object> response = new HashMap<>();
-        response.put("waste_id", wasteId);
         response.put("type", type);
         response.put("weight", weight);
         response.put("status", status);
@@ -54,22 +53,43 @@ public class WasteController {
 
 
 
+
+
+
     @PutMapping(value = "/wastes/{wasteId}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> updateWaste(
             @PathVariable String wasteId,
             @RequestBody Map<String, Object> updatedWaste) {
 
 
-        String newType = (String) updatedWaste.get("type");
-        double newWeight = Double.parseDouble(updatedWaste.get("weight").toString());
+        String newType = (String) updatedWaste.get("hasType");
+        if (newType == null) {
+            return ResponseEntity.badRequest().body("Le champ 'type' est requis.");
+        }
+
+        Double newWeight;
+        try {
+            newWeight = Double.parseDouble(updatedWaste.get("hasWeight").toString());
+        } catch (NullPointerException | NumberFormatException e) {
+            return ResponseEntity.badRequest().body("Le champ 'weight' est requis et doit être un nombre.");
+        }
+
         String newStatus = (String) updatedWaste.get("status");
+        if (newStatus == null) {
+            return ResponseEntity.badRequest().body("Le champ 'status' est requis.");
+        }
+
         String createdAt = (String) updatedWaste.get("createdAt");
+        if (createdAt == null) {
+            return ResponseEntity.badRequest().body("Le champ 'createdAt' est requis.");
+        }
 
 
         wasteService.updateWaste(wasteId, newType, newWeight, newStatus, createdAt);
 
         return ResponseEntity.ok("Déchet mis à jour avec succès !");
     }
+
 
 
     @DeleteMapping("/waste/{wasteId}")
@@ -96,5 +116,38 @@ public class WasteController {
 
         return ResponseEntity.ok(result);
     }
+
+
+
+    @GetMapping(value = "/waste/{wasteId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> getWasteById(@PathVariable String wasteId) {
+        String waste = wasteService.getWasteById(wasteId);
+
+        if (waste != null && !waste.contains("error")) {
+            return ResponseEntity.ok(waste);
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(waste);
+        }
+    }
+
+    @GetMapping(value = "/status", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> getWastesByStatus(
+            @RequestParam(required = false) String status) {
+        String result;
+
+        if (status != null && !status.isEmpty()) {
+            result = wasteService.queryWastesByStatus(status);
+        } else {
+            result = "{\"error\": \"Veuillez fournir un statut\"}";
+            return ResponseEntity.badRequest().body(result);
+        }
+
+        return ResponseEntity.ok(result);
+    }
+
+
+
+
 
 }
