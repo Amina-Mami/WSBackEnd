@@ -324,14 +324,6 @@
     >19.5</untitled-ontology-5:hasWeight>
     <untitled-ontology-5:hasType>Metal</untitled-ontology-5:hasType>
   </rdf:Description>
-  <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#10">
-    <untitled-ontology-5:type>Plastic</untitled-ontology-5:type>
-    <untitled-ontology-5:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
-    >30.5</untitled-ontology-5:weight>
-    <untitled-ontology-5:status>Pending</untitled-ontology-5:status>
-    <untitled-ontology-5:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
-    >2024-10-26T12:00:00Z</untitled-ontology-5:createdAt>
-  </untitled-ontology-5:Déchet>
   <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#7">
     <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >2024-10-26T19:00:00</untitled-ontology-5:article_created_at>
@@ -356,12 +348,15 @@
     </untitled-ontology-5:aDéchet>
     <untitled-ontology-5:aCommentéArticle>
       <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu2">
-        <untitled-ontology-5:title>Article sur le recyclage</untitled-ontology-5:title>
         <untitled-ontology-5:image>image1.jpg</untitled-ontology-5:image>
         <untitled-ontology-5:content>Contenu de l'article sur le recyclage.</untitled-ontology-5:content>
         <untitled-ontology-5:articlecreated_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
         >"2024-09-15"</untitled-ontology-5:articlecreated_at>
         <untitled-ontology-5:article_id>1</untitled-ontology-5:article_id>
+        <untitled-ontology-5:title>Article sur le recyclage</untitled-ontology-5:title>
+        <untitled-ontology-5:contentArticle>Contenu de l'article sur le recyclage2</untitled-ontology-5:contentArticle>
+        <untitled-ontology-5:article_created_at rdf:datatype=
+        "http://www.w3.org/2001/XMLSchema#dateTime">2024-10-29T15:02</untitled-ontology-5:article_created_at>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
       </untitled-ontology-5:Article>
     </untitled-ontology-5:aCommentéArticle>
@@ -381,6 +376,12 @@
     </untitled-ontology-5:aCentreRecyclage>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </untitled-ontology-5:CatégorieMatériau>
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#11">
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-29T14:04</untitled-ontology-5:article_created_at>
+    <untitled-ontology-5:contentArticle>TESTING 4</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:title>souzem test 3 update</untitled-ontology-5:title>
+  </untitled-ontology-5:Article>
   <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#6">
     <untitled-ontology-5:title>Le Rôle des Startups dans la Gestion des Déchets Électroniques</untitled-ontology-5:title>
     <untitled-ontology-5:contentArticle>Les startups jouent un rôle de plus en plus important dans la gestion des déchets électroniques. En développant des technologies innovantes pour recycler et réutiliser les composants électroniques, elles contribuent à diminuer l'impact des e-déchets sur l'environnement.</untitled-ontology-5:contentArticle>
@@ -414,14 +415,19 @@
     <untitled-ontology-5:event_id>1</untitled-ontology-5:event_id>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </untitled-ontology-5:Participation>
-  <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#12">
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#12">
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-29T16:03</untitled-ontology-5:article_created_at>
+    <untitled-ontology-5:contentArticle>search</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:title>testing search</untitled-ontology-5:title>
     <untitled-ontology-5:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >2024-10-26T12:00:00Z</untitled-ontology-5:createdAt>
     <untitled-ontology-5:status>Pending</untitled-ontology-5:status>
     <untitled-ontology-5:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
     >10.5</untitled-ontology-5:hasWeight>
     <untitled-ontology-5:hasType>Metal</untitled-ontology-5:hasType>
-  </untitled-ontology-5:Déchet>
+    <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Déchet"/>
+  </untitled-ontology-5:Article>
   <untitled-ontology-5:ÉquipementRecyclage rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu9">
     <untitled-ontology-5:typeEquipment>Broyage</untitled-ontology-5:typeEquipment>
     <untitled-ontology-5:purchase_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
@@ -556,10 +562,10 @@
     <j.0:wasteId>1</j.0:wasteId>
   </rdf:Description>
   <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#2">
-    <untitled-ontology-5:title>Mise à jour de l'article</untitled-ontology-5:title>
-    <untitled-ontology-5:contentArticle>Le contenu mis à jour de l'article.</untitled-ontology-5:contentArticle>
     <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >2024-10-26T12:00:00</untitled-ontology-5:article_created_at>
+    <untitled-ontology-5:contentArticle>Le contenu mis à jour de l'article.</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:title>Mise à jour de l'article1</untitled-ontology-5:title>
   </untitled-ontology-5:Article>
   <untitled-ontology-5:Commentaire rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu5">
     <untitled-ontology-5:user_id>"1"</untitled-ontology-5:user_id>
