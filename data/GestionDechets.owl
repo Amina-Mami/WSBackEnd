@@ -332,7 +332,40 @@
     >19.5</untitled-ontology-5:hasWeight>
     <untitled-ontology-5:hasStatus>Eliminated</untitled-ontology-5:hasStatus>
   </rdf:Description>
+
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu12">
+
+  <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#10">
+    <untitled-ontology-5:type>Plastic</untitled-ontology-5:type>
+    <untitled-ontology-5:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >30.5</untitled-ontology-5:weight>
+    <untitled-ontology-5:status>Pending</untitled-ontology-5:status>
+    <untitled-ontology-5:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-26T12:00:00Z</untitled-ontology-5:createdAt>
+  </untitled-ontology-5:Déchet>
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#7">
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-26T19:00:00</untitled-ontology-5:article_created_at>
+    <untitled-ontology-5:contentArticle>Le recyclage du verre est une pratique bénéfique pour l'environnement. Le verre peut être recyclé à l'infini sans perte de qualité. Cet article met en lumière le processus de recyclage du verre et son impact positif sur la réduction des émissions de carbone.</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:title>Les Avantages du Recyclage du Verre</untitled-ontology-5:title>
+  </untitled-ontology-5:Article>
+  <untitled-ontology-5:Utilisateur rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu12">
+    <untitled-ontology-5:user_password>amina123</untitled-ontology-5:user_password>
+    <untitled-ontology-5:user_name>amina</untitled-ontology-5:user_name>
+    <untitled-ontology-5:user_id>"1"</untitled-ontology-5:user_id>
+    <untitled-ontology-5:user_email>amina.mami@esprit.tn</untitled-ontology-5:user_email>
+    <untitled-ontology-5:aDéchet>
+      <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu6">
+        <untitled-ontology-5:weight>"80"</untitled-ontology-5:weight>
+        <untitled-ontology-5:waste_id>"1"</untitled-ontology-5:waste_id>
+        <untitled-ontology-5:type>"verre"</untitled-ontology-5:type>
+        <untitled-ontology-5:status>"-"</untitled-ontology-5:status>
+        <untitled-ontology-5:created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >"20-09-2024"</untitled-ontology-5:created_at>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </untitled-ontology-5:Déchet>
+    </untitled-ontology-5:aDéchet>
+
     <untitled-ontology-5:aCommentéArticle>
       <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu2">
         <untitled-ontology-5:article_id>1</untitled-ontology-5:article_id>
@@ -361,6 +394,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#CentreRecyclage"/>
       </owl:NamedIndividual>
     </untitled-ontology-5:aCentreRecyclage>
+
     <untitled-ontology-5:categorie_id>"1"</untitled-ontology-5:categorie_id>
     <untitled-ontology-5:nameCategory>Plastique</untitled-ontology-5:nameCategory>
     <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#CatégorieMatériau"/>
@@ -380,6 +414,16 @@
     >50.0</untitled-ontology-5:hasWeight>
     <untitled-ontology-5:hasType>déchets organiques</untitled-ontology-5:hasType>
   </untitled-ontology-5:Déchet>
+
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </untitled-ontology-5:CatégorieMatériau>
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#6">
+    <untitled-ontology-5:title>Le Rôle des Startups dans la Gestion des Déchets Électroniques</untitled-ontology-5:title>
+    <untitled-ontology-5:contentArticle>Les startups jouent un rôle de plus en plus important dans la gestion des déchets électroniques. En développant des technologies innovantes pour recycler et réutiliser les composants électroniques, elles contribuent à diminuer l'impact des e-déchets sur l'environnement.</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-26T18:45:00</untitled-ontology-5:article_created_at>
+  </untitled-ontology-5:Article>
+
   <rdf:Description rdf:about="http://example.org/waste/12345">
     <j.0:wasteId>12345</j.0:wasteId>
     <j.0:type>Plastic</j.0:type>
@@ -432,6 +476,20 @@
     <j.0:type>Metal</j.0:type>
     <j.0:wasteId>2</j.0:wasteId>
   </rdf:Description>
+  <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#22737ed9-e338-4fb7-aedb-bb5358719608">
+    <untitled-ontology-5:hasType>déchets organiques</untitled-ontology-5:hasType>
+    <untitled-ontology-5:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >30.0</untitled-ontology-5:hasWeight>
+    <untitled-ontology-5:status>en attente</untitled-ontology-5:status>
+    <untitled-ontology-5:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-27T17:34:13.058966Z</untitled-ontology-5:createdAt>
+  </untitled-ontology-5:Déchet>
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#5">
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-26T17:15:00</untitled-ontology-5:article_created_at>
+    <untitled-ontology-5:contentArticle>Avec l'augmentation des déchets plastiques, la sensibilisation publique est cruciale. Les campagnes dans les écoles et les programmes de formation sur le tri sélectif sont parmi les initiatives efficaces pour informer la population et encourager des comportements plus responsables.</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:title>Sensibilisation à la Réduction des Déchets Plastiques</untitled-ontology-5:title>
+  </untitled-ontology-5:Article>
   <rdf:Description rdf:about="http://example.org/dechet/12">
     <j.0:wasteId>12</j.0:wasteId>
     <j.0:type>Plastic</j.0:type>
@@ -439,7 +497,22 @@
     <j.0:status>Pending</j.0:status>
     <j.0:createdAt>2024-10-26T12:00:00Z</j.0:createdAt>
   </rdf:Description>
+
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu10">
+
+  <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#null">
+    <untitled-ontology-5:hasType>Plastic</untitled-ontology-5:hasType>
+    <untitled-ontology-5:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >58.5</untitled-ontology-5:hasWeight>
+    <untitled-ontology-5:status>Eliminated</untitled-ontology-5:status>
+    <untitled-ontology-5:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-27T12:00:00Z</untitled-ontology-5:createdAt>
+  </untitled-ontology-5:Déchet>
+  <untitled-ontology-5:ÉvénementCollecte rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu10">
+    <untitled-ontology-5:event_name>Collecte de plastique 2024</untitled-ontology-5:event_name>
+    <untitled-ontology-5:event_location>parc soukra</untitled-ontology-5:event_location>
+    <untitled-ontology-5:event_id>1</untitled-ontology-5:event_id>
+
     <untitled-ontology-5:event_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >21/09/2024</untitled-ontology-5:event_date>
     <untitled-ontology-5:event_id>1</untitled-ontology-5:event_id>
@@ -456,8 +529,28 @@
     <j.0:wasteId>144</j.0:wasteId>
   </rdf:Description>
   <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#ef7451ab-0def-4ef4-8331-a4b7391cee7c">
+
     <untitled-ontology-5:createdAt>2024-10-29 01:34:32</untitled-ontology-5:createdAt>
     <untitled-ontology-5:status>éliminé</untitled-ontology-5:status>
+
+    <untitled-ontology-5:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-27T12:00:00Z</untitled-ontology-5:createdAt>
+    <untitled-ontology-5:status>Eliminated</untitled-ontology-5:status>
+    <untitled-ontology-5:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+    >108.5</untitled-ontology-5:hasWeight>
+    <untitled-ontology-5:hasType>Metal</untitled-ontology-5:hasType>
+  </untitled-ontology-5:Déchet>
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#4">
+    <untitled-ontology-5:title>L'Économie Circulaire : Une Solution aux Déchets Industriels</untitled-ontology-5:title>
+    <untitled-ontology-5:contentArticle>L'économie circulaire vise à transformer les déchets industriels en ressources réutilisables. Cet article décrit comment l'adoption de nouvelles stratégies industrielles permet de réduire la pollution tout en créant de nouvelles opportunités économiques.</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-26T16:00:00</untitled-ontology-5:article_created_at>
+  </untitled-ontology-5:Article>
+  <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#14">
+    <untitled-ontology-5:createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-26T12:00:00</untitled-ontology-5:createdAt>
+    <untitled-ontology-5:hasType>Plastic</untitled-ontology-5:hasType>
+
     <untitled-ontology-5:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
     >104.5</untitled-ontology-5:hasWeight>
     <untitled-ontology-5:hasType>plastique</untitled-ontology-5:hasType>
@@ -493,8 +586,20 @@
     <j.0:wasteId>14</j.0:wasteId>
     <j.0:status>en cours</j.0:status>
   </rdf:Description>
+
   <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#2685c089-4512-46b8-8cf7-069588ca2af1">
     <untitled-ontology-5:hasType>papier</untitled-ontology-5:hasType>
+
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#3">
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-25T11:30:00</untitled-ontology-5:article_created_at>
+    <untitled-ontology-5:contentArticle>Les déchets plastiques sont devenus un problème majeur pour notre planète. Chaque année, des millions de tonnes de plastique finissent dans les océans, affectant la faune marine et la qualité de l'eau. Cet article explore les effets néfastes des déchets plastiques sur les écosystèmes et présente des solutions pour réduire leur impact.</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:title>Impact des Déchets Plastiques sur l'Environnement</untitled-ontology-5:title>
+  </untitled-ontology-5:Article>
+  <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#15">
+    <untitled-ontology-5:hasCreatedAt>2024-10-26T12:00:00Z</untitled-ontology-5:hasCreatedAt>
+    <untitled-ontology-5:hasStatus>Eliminated</untitled-ontology-5:hasStatus>
+
     <untitled-ontology-5:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
     >30.0</untitled-ontology-5:hasWeight>
     <untitled-ontology-5:status>en attente</untitled-ontology-5:status>
@@ -532,6 +637,7 @@
     <j.0:status>Collected</j.0:status>
     <j.0:createdAt>2024-10-26T10:00:00Z</j.0:createdAt>
   </rdf:Description>
+
   <untitled-ontology-5:Déchet rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#a6fb6ec9-e8a3-455a-8682-04234f99a7af">
     <untitled-ontology-5:hasType>papier</untitled-ontology-5:hasType>
     <untitled-ontology-5:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
@@ -549,6 +655,18 @@
   </untitled-ontology-5:Déchet>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu5">
     <untitled-ontology-5:article_id>"1"</untitled-ontology-5:article_id>
+
+  <untitled-ontology-5:Article rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#2">
+    <untitled-ontology-5:title>Mise à jour de l'article</untitled-ontology-5:title>
+    <untitled-ontology-5:contentArticle>Le contenu mis à jour de l'article.</untitled-ontology-5:contentArticle>
+    <untitled-ontology-5:article_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2024-10-26T12:00:00</untitled-ontology-5:article_created_at>
+  </untitled-ontology-5:Article>
+  <untitled-ontology-5:Commentaire rdf:about="http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#Individu5">
+    <untitled-ontology-5:user_id>"1"</untitled-ontology-5:user_id>
+    <untitled-ontology-5:contentComment>l'article sur le recyclage est intéréssant</untitled-ontology-5:contentComment>
+    <untitled-ontology-5:commentaire_id>"1"</untitled-ontology-5:commentaire_id>
+
     <untitled-ontology-5:comment_created_at rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
     >"20/09/2024"</untitled-ontology-5:comment_created_at>
     <untitled-ontology-5:commentaire_id>"1"</untitled-ontology-5:commentaire_id>

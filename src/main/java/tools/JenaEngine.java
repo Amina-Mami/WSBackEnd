@@ -16,6 +16,7 @@ import java.util.List;
  *
  * @author DO.ITSUDPARIS
  */
+
 public class JenaEngine {
     static private String RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
     /**
