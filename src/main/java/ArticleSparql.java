@@ -9,22 +9,21 @@ public class ArticleSparql {
     public static void main(String[] args) {
         String NS = "";
 
-        // Load RDF model
+
         Model model = JenaEngine.readModel("data/GestionDechets.owl");
 
         if (model != null) {
 
-            // Get namespace from the model
             NS = model.getNsPrefixURI("ontologie");
             if (NS == null) {
                 System.out.println("Namespace 'ontologie' not found, using hardcoded namespace.");
                 NS = "http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#";
             }
 
-            // Load inferred model (if you have rules)
+
             Model inferredModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
 
-            // Define SPARQL query for articles
+
             String sparqlSelect =
                     "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
                             "PREFIX ontologie: <" + NS + "> " +

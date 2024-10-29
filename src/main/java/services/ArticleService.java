@@ -1,14 +1,18 @@
 package services;
-import org.apache.commons.text.StringEscapeUtils;
+
 import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.query.*;
 import org.apache.jena.util.FileManager;
 import org.apache.jena.vocabulary.RDF;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class ArticleService {
@@ -35,20 +39,35 @@ public class ArticleService {
                         "  ?article a ontologie:Article . " +
                         "  ?article ?property ?value . " +
                         "}";
+
         Query query = QueryFactory.create(queryString);
         try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
             ResultSet results = qexec.execSelect();
-            StringBuilder resultString = new StringBuilder();
+            Map<String, JSONObject> articlesMap = new HashMap<>();
+
             while (results.hasNext()) {
                 QuerySolution solution = results.nextSolution();
-                String article = solution.get("article").toString();
-                String property = solution.get("property").toString();
+                String articleUrl = solution.getResource("article").toString();
+                String articleId = articleUrl.split("#")[1];
+                String property = solution.get("property").toString().split("#")[1];
                 String value = solution.get("value").toString();
-                resultString.append("Article: ").append(article)
-                        .append(", Property: ").append(property)
-                        .append(", Value: ").append(value).append("\n");
+
+                articlesMap.putIfAbsent(articleId, new JSONObject());
+                articlesMap.get(articleId).put(property, value);
             }
-            return resultString.toString();
+
+            JSONObject resultJson = new JSONObject();
+            JSONArray articlesArray = new JSONArray();
+
+            for (Map.Entry<String, JSONObject> entry : articlesMap.entrySet()) {
+                JSONObject articleObject = new JSONObject();
+                articleObject.put("article_id", entry.getKey());
+                articleObject.put("details", entry.getValue());
+                articlesArray.put(articleObject);
+            }
+
+            resultJson.put("articles", articlesArray);
+            return resultJson.toString();
         }
     }
 
@@ -60,25 +79,29 @@ public class ArticleService {
                         "WHERE { " +
                         "  ontologie:" + articleId + " ?property ?value . " +
                         "}";
+
         Query query = QueryFactory.create(queryString);
         try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
             ResultSet results = qexec.execSelect();
-            StringBuilder resultString = new StringBuilder();
+            JSONObject articleJson = new JSONObject();
+
             while (results.hasNext()) {
                 QuerySolution solution = results.nextSolution();
-                String property = solution.get("property").toString();
+                String property = solution.get("property").toString().split("#")[1];
                 String value = solution.get("value").toString();
-                resultString.append("Property: ").append(property)
-                        .append(", Value: ").append(value).append("\n");
+                articleJson.put(property, value);
             }
-            return resultString.toString();
+
+            if (articleJson.isEmpty()) {
+                return null; // If no properties found for the given articleId
+            }
+
+            return new JSONObject().put("article", articleJson).toString();
         }
     }
 
     public String queryArticleByTitle(String title) {
         loadRDF();
-
-        // Utiliser un FILTER pour insensibilité à la casse avec "contains"
         String queryString =
                 "PREFIX ontologie: <http://www.semanticweb.org/user/ontologies/2024/8/untitled-ontology-5#> " +
                         "SELECT ?article ?titleValue ?content ?createdAt " +
@@ -87,39 +110,40 @@ public class ArticleService {
                         "  ?article ontologie:title ?titleValue . " +
                         "  ?article ontologie:contentArticle ?content . " +
                         "  ?article ontologie:article_created_at ?createdAt . " +
-                        "  FILTER (contains(lcase(str(?titleValue)), lcase(\"" + title + "\"))) " +  // Comparaison insensible à la casse et partielle
+                        "  FILTER (contains(lcase(str(?titleValue)), lcase(\"" + title + "\"))) " +
                         "}";
 
         Query query = QueryFactory.create(queryString);
         try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
             ResultSet results = qexec.execSelect();
-            if (!results.hasNext()) {
-                System.out.println("Aucun résultat trouvé pour le titre: " + title);
-                return "Aucun article trouvé avec ce titre";
-            }
-            StringBuilder resultString = new StringBuilder();
+            JSONArray articlesArray = new JSONArray();
+
             while (results.hasNext()) {
                 QuerySolution solution = results.nextSolution();
 
+                JSONObject articleJson = new JSONObject();
                 RDFNode articleNode = solution.get("article");
                 RDFNode titleNode = solution.get("titleValue");
                 RDFNode contentNode = solution.get("content");
                 RDFNode createdAtNode = solution.get("createdAt");
 
-                if (articleNode != null && titleNode != null) {
-                    resultString.append("Article: ").append(articleNode.toString()).append("\n")
-                            .append("Title: ").append(titleNode.toString()).append("\n")
-                            .append("Content: ").append(contentNode != null ? contentNode.toString() : "N/A").append("\n")
-                            .append("Created At: ").append(createdAtNode != null ? createdAtNode.toString() : "N/A").append("\n\n");
-                }
+                articleJson.put("article_id", articleNode.toString().split("#")[1]);
+                articleJson.put("title", titleNode != null ? titleNode.toString() : "N/A");
+                articleJson.put("content", contentNode != null ? contentNode.toString() : "N/A");
+                articleJson.put("created_at", createdAtNode != null ? createdAtNode.toString() : "N/A");
+
+                articlesArray.put(articleJson);
             }
-            return resultString.toString();
+
+            if (articlesArray.isEmpty()) {
+                return "Aucun article trouvé avec ce titre";
+            }
+
+            return new JSONObject().put("articles", articlesArray).toString();
         }
     }
 
-
-
-
+    // Existing methods for adding, updating, and deleting articles remain unchanged
 
     public void addArticle(String articleId, String title, String content, String createdAt) {
         loadRDF();
